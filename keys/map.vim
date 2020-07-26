@@ -10,6 +10,9 @@ let g:mapleader = '\<Space>'
 "Fechar e salvar
 nnoremap <C-s> :w<CR>
 
+" kj como ESC 
+inoremap kj <ESC>
+
 "Tab altera entre os Buffers 
 nnoremap <TAB> :bnext<CR>
 nnoremap <TAB> :bprevious<CR>

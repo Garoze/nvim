@@ -1,4 +1,13 @@
 {
+    "pairs.enableCharacters": [
+        "(",
+        "[",
+        "{",
+        "'",
+        "\"",
+        "`"
+    ],
+    "suggest.timeout": 3000,
     "languageserver": {
         "clangd": {
             "command": "clangd",
