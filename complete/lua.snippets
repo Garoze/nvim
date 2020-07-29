@@ -131,3 +131,7 @@ endsnippet
 snippet getElementData:v "[Shared] retrives a data from a keyword." b
 local ${1:var} = getElementData(${2:element}, ${3:keyword})
 endsnippet
+
+snippet getResourceRootElement "Description" b
+addEventHandler(${1:Event}, getResourceRootElement(getThisResource()), ${2:functionName})
+endsnippet
