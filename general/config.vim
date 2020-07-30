@@ -7,7 +7,7 @@
 
 set iskeyword+=-
 autocmd FileType * set formatoptions-=cro
-autocmd FileType cpp nnoremap <C-b> :! make && ./main<CR>
+autocmd FileType cpp,c nnoremap <C-b> :!make && make run<CR>
 
 let g:coc_snippet_next = '<C-l>'
 let g:coc_snippet_prev = '<C-k>'

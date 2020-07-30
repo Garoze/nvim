@@ -7,23 +7,31 @@
 
 let g:mapleader = '\<Space>'
 
-"Fechar e salvar
-nnoremap <C-s> :w<CR>
+"Close and exit 
+nnoremap <C-q> :q  <CR>
+nnoremap <C-w> :wq <CR>
 
-" kj como ESC 
-inoremap kj <ESC>
+"Vim split mode 
+nnoremap <C-l> <C-w>v
+nnoremap <C-k> <C-w>s
+
+"split nav 
+nnoremap <C-up>    <C-W>k
+nnoremap <C-down>  <C-W>j
+nnoremap <C-left>  <C-W>h
+nnoremap <C-right> <C-W>l
 
 "Tab altera entre os Buffers 
 nnoremap <TAB> :bnext<CR>
 nnoremap <TAB> :bprevious<CR>
 
-" Alt+j/k move blocos
+"Alt+j/k move blocos
 nnoremap <M-k> VdkP
 nnoremap <M-j> VdjP
 
 "Resize window 
-nnoremap <M-j> :resize -2<CR>
-nnoremap <M-k> :resize +2<CR>
+"nnoremap <M-j> :resize -2<CR>
+"nnoremap <M-k> :resize +2<CR>
 nnoremap <M-h> :vertical resize -2<CR>
 nnoremap <M-l> :vertical resize +2<CR>
 
