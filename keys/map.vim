@@ -15,6 +15,9 @@ nnoremap <C-w> :wq <CR>
 nnoremap <M-l> <C-w>v
 nnoremap <M-k> <C-w>s
 
+"Copiar para o clipboard
+vnoremap <C-c> "+y
+
 "split nav 
 nnoremap <C-up>    <C-W>k
 nnoremap <C-down>  <C-W>j
