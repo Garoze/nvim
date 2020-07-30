@@ -12,8 +12,8 @@ nnoremap <C-q> :q  <CR>
 nnoremap <C-w> :wq <CR>
 
 "Vim split mode 
-nnoremap <C-l> <C-w>v
-nnoremap <C-k> <C-w>s
+nnoremap <M-l> <C-w>v
+nnoremap <M-k> <C-w>s
 
 "split nav 
 nnoremap <C-up>    <C-W>k
@@ -26,14 +26,14 @@ nnoremap <TAB> :bnext<CR>
 nnoremap <TAB> :bprevious<CR>
 
 "Alt+j/k move blocos
-nnoremap <M-k> VdkP
-nnoremap <M-j> VdjP
+nnoremap <C-k> VdkP
+nnoremap <C-j> VdjP
 
 "Resize window 
 "nnoremap <M-j> :resize -2<CR>
 "nnoremap <M-k> :resize +2<CR>
-nnoremap <M-h> :vertical resize -2<CR>
-nnoremap <M-l> :vertical resize +2<CR>
+"nnoremap <M-h> :vertical resize -2<CR>
+"nnoremap <M-l> :vertical resize +2<CR>
 
 "Easy caps 
 inoremap <C-u> <ESC>viwUi
