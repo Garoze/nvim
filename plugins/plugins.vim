@@ -19,6 +19,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'itchyny/lightline.vim'
     " Vim Rainbow
     Plug 'frazrepo/vim-rainbow'
+    " Fzf 
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " Atualização Automatica dos Plugins.

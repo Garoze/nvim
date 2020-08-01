@@ -6,6 +6,14 @@
 "╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚═╝    ╚═══╝  ╚═╝╚═╝     ╚═╝"
 
 let g:mapleader = '\<Space>'
+" Fzf 
+nnoremap <C-P> :Files<CR>
+augroup fzf 
+    autocmd!
+    autocmd! FileType fzf 
+    autocmd FileType fzf set laststatus=0 noshowmode noruler 
+                \| autocmd Bufleave <buffer> set laststatus=2 showmode ruler 
+augroup END
 
 "Close and exit 
 nnoremap <C-q> :q  <CR>
