@@ -5,7 +5,6 @@ function ${1:functionName}(${2:...})
 end
 endsnippet
 
-
 "---------- addEvent ----------"  
 snippet addEvent "[Shared] register a custom event." b
 addEvent($1)$2
@@ -15,7 +14,6 @@ snippet addEvent:s "[Shared] register a custom event." b
 addEvent(${1:eventName}, true)
 addEventHandler($1, ${2:getRootElement()}, ${3:functionName})$4
 endsnippet
-
 
 "---------- addEventHandler ----------"        
 snippet addEventHandler "[Shared] add a event to a function." b
@@ -31,7 +29,6 @@ addEventHandler(${1:eventName}, ${2:getRootElement()}, function(${3:arguments})
 	$4
 end)$5
 endsnippet
-
 
 "---------- addCommandHandler ----------" 
 snippet addCommandHandler "[Shared] add a command to a function." b
@@ -58,7 +55,6 @@ setTimer(function()
 	$3	
 end, ${1:timer}, ${2:count})
 endsnippet
-
 
 "---------- outputChatBox ----------"
 snippet outputChatBox "[Shared] output an text on the ChatBox." b
@@ -103,7 +99,6 @@ function getElementDistance(player, element)
 end 
 endsnippet
 
-
 "---------- onResourceStart ----------"
 snippet onResourceStart "[Server] executes a function when a resource start." b
 addEventHandler('onResourceStart', ${1:getRootElement()}, ${2:functionName})$3
@@ -135,3 +130,14 @@ endsnippet
 snippet getResourceRootElement "Description" b
 addEventHandler(${1:Event}, getResourceRootElement(getThisResource()), ${2:functionName})
 endsnippet
+
+"---------- triggerEvent ----------"
+snippet triggerServerEvent "[Client] trigger a registred event on ther server side." b
+triggerServerEvent(${1:eventName}, ${2:sourceElement}, ${3:arguments})$4
+endsnippet
+
+snippet triggerClientEvent "[Server] trigger a registred event on the client side." b
+triggerClientEvent(${1:elementSendTo}, ${2:eventName}, ${3:sourceElement}, ${4:arguments})$5
+endsnippet
+
+
