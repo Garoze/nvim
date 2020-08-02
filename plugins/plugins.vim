@@ -22,6 +22,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Fzf 
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    " Nerdtreee
+    Plug 'preservim/nerdtree'
 call plug#end()
 
 " Atualização Automatica dos Plugins.

@@ -6,12 +6,16 @@
 "╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚═╝    ╚═══╝  ╚═╝╚═╝     ╚═╝"
 
 let g:mapleader = '\<Space>'
+
+" Open Nerdtree 
+map <C-B> :NERDTreeToggle<CR>
+
 " Fzf 
 nnoremap <C-P> :Files<CR>
 augroup fzf 
     autocmd!
     autocmd! FileType fzf 
-    autocmd FileType fzf set laststatus=0 noshowmode noruler 
+    autocmd  FileType fzf set laststatus=0 noshowmode noruler 
                 \| autocmd Bufleave <buffer> set laststatus=2 showmode ruler 
 augroup END
 
@@ -22,9 +26,6 @@ nnoremap <C-w> :wq <CR>
 "Vim split mode 
 nnoremap <M-l> <C-w>v
 nnoremap <M-k> <C-w>s
-
-"Copiar para o clipboard
-vnoremap <C-c> "+y
 
 "split nav 
 nnoremap <C-up>    <C-W>k
@@ -57,3 +58,12 @@ for key in ['<Up>','<Down>', '<Left>', '<Right>']
     exec 'cnoremap' key '<Nop>'
     exec 'vnoremap' key '<Nop>'
 endfor 
+
+" Suporte para o clipboard do windows 
+let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
+if executable(s:clip)
+    augroup WSLYank
+        autocmd!
+        autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
+    augroup END
+endif
