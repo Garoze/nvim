@@ -12,6 +12,11 @@ autocmd FileType cpp,c nnoremap <C-b> :!make && make run<CR>
 let g:coc_snippet_next = '<C-l>'
 let g:coc_snippet_prev = '<C-k>'
 
+" NERDTree configurations 
+let g:NERDTreeDirArrows=0
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
 let g:rainbow_active = 1
 
 let g:rainbow_load_separately = [

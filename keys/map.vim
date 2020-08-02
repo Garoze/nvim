@@ -23,6 +23,10 @@ augroup END
 nnoremap <C-q> :q  <CR>
 nnoremap <C-w> :wq <CR>
 
+" indent 
+vmap < <gv 
+vmap > >gv
+
 "Vim split mode 
 nnoremap <M-l> <C-w>v
 nnoremap <M-k> <C-w>s
