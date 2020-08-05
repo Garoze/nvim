@@ -1,4 +1,15 @@
 {
+    "snippets.extends": {
+        "javascriptreact": [
+            "javascript"
+        ],
+        "typescripreact": [
+            "javascript"
+        ],
+        "typescript": [
+            "javascript"
+        ]
+    },
     "html.autoClosingTags": true,
     "html.suggest.html5": true,
     "html.filetypes": [
