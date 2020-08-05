@@ -24,6 +24,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
     " Nerdtreee
     Plug 'preservim/nerdtree'
+    " Typescript / Javascript + React
+	Plug 'pangloss/vim-javascript'
+	Plug 'leafgarland/typescript-vim'
+	Plug 'peitalin/vim-jsx-typescript'
+	Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+	Plug 'jparise/vim-graphql'
 call plug#end()
 
 " Atualização Automatica dos Plugins.

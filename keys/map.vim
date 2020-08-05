@@ -8,7 +8,7 @@
 let g:mapleader = '\<Space>'
 
 " Open Nerdtree 
-map <C-B> :NERDTreeToggle<CR>
+map <C-\> :NERDTreeToggle<CR>
 
 " NERDTree configurations 
 let g:NERDTreeDirArrows=0

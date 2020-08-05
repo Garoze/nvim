@@ -1,4 +1,6 @@
 {
+    "html.autoClosingTags": true,
+    "html.suggest.html5": true,
     "pairs.enableCharacters": [
         "(",
         "[",
