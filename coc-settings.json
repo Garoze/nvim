@@ -1,6 +1,13 @@
 {
     "html.autoClosingTags": true,
     "html.suggest.html5": true,
+    "html.filetypes": [
+        "html",
+        "handlebars",
+        "htmldjango",
+        "tsx",
+        "jsx"
+    ],
     "pairs.enableCharacters": [
         "(",
         "[",
