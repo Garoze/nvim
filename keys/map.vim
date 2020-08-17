@@ -8,7 +8,7 @@
 let g:mapleader = '\<Space>'
 
 " Open markdown preview 
-nmap <C-M> <Plug>MarkdownPreviewToggle
+nmap <M-M> <Plug>MarkdownPreviewToggle
 
 " Open Nerdtree 
 map <C-\> :NERDTreeToggle<CR>
